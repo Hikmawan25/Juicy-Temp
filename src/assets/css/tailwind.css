@@ -1,0 +1,41 @@
+.background {
+  background-image: url("/src/assets/images/new.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+@media (min-width: 640px) {
+  .background {
+    background-image: url("/src/assets/images/new.png");
+    background-position: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .background {
+    background-image: url("/src/assets/images/new.png");
+    background-position: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .background {
+    background-image: url("/src/assets/images/new.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+  }
+}
+
+@media (min-width: 1280px) {
+  .background {
+    background-image: url("/src/assets/images/new.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+  }
+}
