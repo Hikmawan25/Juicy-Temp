@@ -10,7 +10,7 @@ export default defineConfig({
   base: 'https://putihskinclinic.com/',
   plugins: [react(), tsconfigPaths()],
   define: {
-    "env": env,
+    "process.env": env,
     global: 'window'
   },
 })
