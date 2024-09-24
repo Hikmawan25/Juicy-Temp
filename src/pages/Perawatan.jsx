@@ -369,7 +369,7 @@ const Perawatan = () => {
         <div className="relative">
             <img src={perawatanimg} className="object-cover w-full h-[363px]" />
 
-            <div className="absolute top-11 left-12 xs:top-40 xs:left-10 lg:top-40 lg:left-32">
+            <div className="absolute top-11 left-12 xs:top-40 xs:left-10 lg:top-40 lg:left-32 xl:left-[142px]">
                 <h1 className="font-semibold text-lg lg:text-[32px] font-montserrat text-charcoal lg:mb-1">
                     Putih Signature Treatment
                 </h1>
@@ -378,7 +378,7 @@ const Perawatan = () => {
                 </p>
             </div>
 
-            <div className="xs:p-10 md:p-28 lg:p-32">
+            <div className="xs:p-10 md:p-28 lg:p-32 xl:px-[142px]">
                 <div className="slide-container">
                     <Slide
                         indicators={true}

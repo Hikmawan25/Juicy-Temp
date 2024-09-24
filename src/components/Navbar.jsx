@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Whatsapp } from "react-bootstrap-icons";
 import { Link, useLocation } from "react-router-dom";
-import MainLogo from "../assets/images/logo-dark.png";
+import MainLogo from "../assets/images/putih-logo.png";
 import axios from "axios";
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('https://putih-skin-clinic.vercel.app/home');
+            const response = await axios.get(process.env.REACT_BASE_API_URL + "/home");
             setData(response?.data);
         } catch (err) {
             setLoading(false);
@@ -50,19 +50,17 @@ const Navbar = () => {
     const isActive = (path) => location.pathname === path;
 
     const handleWhatsAppRedirect = () => {
-        const encodeMessage = encodeURIComponent(
-            "Hallo, saya ingin melakukan reservasi."
-        );
+        const message = "Hallo, saya ingin melakukan reservasi.";
         const phoneNumber = data?.data?.reservasion_phone;
-        const url = `https://wa.me/${phoneNumber}?text=${encodeMessage}`;
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, "_blank");
     };
 
     return (
         <header className="sticky top-0 z-50 py-4 bg-white shadow-md">
-            <nav className="container flex items-center justify-between px-4 mx-auto md:flex lg:flex">
+            <nav className="container flex items-center justify-between xs:px-5 md:px-11 lg:px-16 xl:px-[142px] 1xl:px-[142px] 3xl:px-[142px] mx-auto md:flex lg:flex">
                 <Link to="/" className="md:flex">
-                    <img src={MainLogo} alt="Logo" className="w-16 h-6" />
+                    <img src={MainLogo} alt="Logo" className="w-16 h-6 lg:w-[77px] lg:h-[25px]" />
                 </Link>
 
                 {/* Links untuk Desktop */}
@@ -82,8 +80,8 @@ const Navbar = () => {
                         <Link
                             to="/perawatan"
                             className={`text-sm text-charcoal font-semibold font-montserrat ${isActive("/perawatan")
-                                    ? "border-b-2 border-b-charcoal text-charcoal pb-1"
-                                    : ""
+                                ? "border-b-2 border-b-charcoal text-charcoal pb-1"
+                                : ""
                                 }`}>
                             Perawatan
                         </Link>
@@ -92,8 +90,8 @@ const Navbar = () => {
                         <Link
                             to="/lokasi"
                             className={`text-sm text-charcoal font-semibold font-montserrat ${isActive("/lokasi")
-                                    ? "border-b-2 border-b-charcoal text-charcoal pb-1"
-                                    : ""
+                                ? "border-b-2 border-b-charcoal text-charcoal pb-1"
+                                : ""
                                 }`}>
                             Lokasi
                         </Link>
@@ -174,8 +172,8 @@ const Navbar = () => {
                         <Link
                             to="/"
                             className={`text-sm text-charcoal font-semibold font-montserrat ${isActive("/promo")
-                                    ? "border-b-2 border-b-charcoal text-charcoal pb-1"
-                                    : ""
+                                ? "border-b-2 border-b-charcoal text-charcoal pb-1"
+                                : ""
                                 }`}>
                             Home
                         </Link>
@@ -195,8 +193,8 @@ const Navbar = () => {
                         <Link
                             to="/perawatan"
                             className={`text-sm text-charcoal font-semibold font-montserrat ${isActive("/perawatan")
-                                    ? "border-b-2 border-b-charcoal text-charcoal pb-1"
-                                    : ""
+                                ? "border-b-2 border-b-charcoal text-charcoal pb-1"
+                                : ""
                                 }`}>
                             Perawatan
                         </Link>
@@ -205,8 +203,8 @@ const Navbar = () => {
                         <Link
                             to="/lokasi"
                             className={`text-sm text-charcoal font-semibold font-montserrat ${isActive("/lokasi")
-                                    ? "border-b-2 border-b-charcoal text-charcoal pb-1"
-                                    : ""
+                                ? "border-b-2 border-b-charcoal text-charcoal pb-1"
+                                : ""
                                 }`}>
                             Lokasi
                         </Link>

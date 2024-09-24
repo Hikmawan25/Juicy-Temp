@@ -14,7 +14,7 @@ const Lokasi = () => {
     return (
         <div className="flex flex-col">
             <div className="relative">
-                <div className="xs:max-w-md lg:max-w-[616px] lg:max-h-[283px] absolute xs:top-28 xs:left-8 md:top-32 md:left-32 lg:top-20 lg:left-32">
+                <div className="xs:max-w-md lg:max-w-[616px] lg:max-h-[283px] absolute xs:top-28 xs:left-11 md:top-32 md:left-[44px] lg:top-20 xl:left-[142px] lg:left-32">
                     <h1 className="font-semibold xs:text-lg lg:text-[32px] font-montserrat text-black lg:mb-1">
                         Our Location
                     </h1>
@@ -58,7 +58,7 @@ const Lokasi = () => {
                 />
             </div>
 
-            <div className="text-center lg:py-6 xs:px-8 xs:py-6 md:px-24 md:py-6 lg:px-32">
+            <div className="text-center lg:py-6 xs:px-11 xs:py-6 md:px-[44px] md:py-6 lg:px-32">
                 <p className="font-normal text-black xs:text-xs md:text-sm lg:text-base font-montserrat">
                     We’re here to solve your skin problems with personalized
                     care and advanced treatments.

@@ -21,7 +21,11 @@ export default {
 
         'xl': '1280px', // => @media (min-width: 1280px) { ... }
 
+        '1xl': '1440px', // => @media (min-width: 2000px) { ... }
+
         '2xl': '1536px', // => @media (min-width: 1536px) { ... }
+
+        '3xl': '1680px', // => @media (min-width: 2000px) { ... }
       },
       colors: {
         transparent: 'transparent',

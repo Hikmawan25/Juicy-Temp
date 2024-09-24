@@ -5,15 +5,15 @@ import { Facebook, Instagram, Tiktok } from "react-bootstrap-icons";
 const Footer = () => {
     return (
         <footer className="mt-auto shadow-inner bg-secondary">
-            <div className="container flex flex-col px-12 pt-12 pb-4 mx-auto space-y-8">
+            <div className="container flex flex-col xs:px-5 md:px-11 lg:px-16 xl:px-[142px] 1xl:px-[142px] 3xl:px-[142px] pt-12 pb-4 mx-auto space-y-8">
                 <div className="flex xs:flex-col xs:justify-start md:flex-row md:justify-between lg:flex-row lg:justify-between">
                     <img
                         src={MainLogo}
                         alt="logo"
-                        className="flex-none w-20 h-5 xs:mb-4 lg:w-[180px] lg:h-[58px]"
+                        className="flex-none xs:mb-4 xs:w-20 xs:h-7 md:w-28 md:h-10 lg:w-[180px] lg:h-[58px]"
                     />
 
-                    <div className="flex md:flex-row lg:flex-row lg:w-9/12 lg:space-x-14 xs:flex-col">
+                    <div className="flex md:flex-row lg:flex-row lg:w-4/6 lg:space-x-14 xs:flex-col">
                         <div className="text-pretty">
                             <h1 className="text-xs font-semibold text-black font-montserrat lg:text-base">
                                 Alamat Klinik
@@ -77,9 +77,8 @@ const Footer = () => {
                     />
                 </div>
 
-                <p className="xs:text-[10px] md:text-xs lg:text-sm font-montserrat font-normal lg:text-center md:text-center xs:text-start text-black">
-                    Copyrigth &copy; {new Date().getFullYear()} Putih Skin
-                    Clinic | All Rights Reserved
+                <p className="xs:text-[10px] md:text-xs lg:text-sm font-montserrat font-normal lg:text-center md:text-center xs:text-start text-gray-600">
+                    Copyrigth &copy; Putih Skin Clinic | All Rights Reserved
                 </p>
             </div>
         </footer>
